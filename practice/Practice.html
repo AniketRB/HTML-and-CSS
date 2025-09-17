@@ -1,27 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PEAK</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <div class="hero">
+    <section class="hero">
         <nav>
             <h2 class="logo">PEAK</h2>
             <ul class="opt">
-                <li><a href="">Author</a></li>
-                <li><a href="">Expression</a></li>
-                <li><a href="">Invitation</a></li>
+                <li><a href="#author">Author</a></li>
+                <li><a href="#expression">Expression</a></li>
+                <li><a href="#invitation">Invitation</a></li>
             </ul>
         </nav>
         <div class="content">
-            <h1 class="quote">“Don’t carry it alone — some burdens are meant to be shared.”</h1>
-            <button class="join-btn">Join Us</button>
+            <h1 class="quote">“Art is the voice of the soul, and it belongs to everyone.”</h1>
+            <button class="join-btn" id="joinBtn">Join Us</button>
         </div>
-    </div>
+        </div>
+    </section>
+    <section id="author" class="page">
+        <div class="author-note">
+            <h1 class="heading-author">A Note from the Founder</h1>
+            <p class="note1">
+            At PEAK, we don’t just add color—we create art that transforms neighborhoods and public spaces.
+
+            From murals and graffiti to unique art pieces, our work brings life, joy, and inspiration to every corner we touch.
+
+            All proceeds from our art are donated to charity or used to support underprivileged communities, because we believe that creativity should not only brighten walls but also hearts.
+
+            Our mission is simple: to make the world more vibrant, more hopeful, and more beautiful—one piece of art at a time.
+            </p>
+            <p class="highlight">
+                Free art, endless inspiration, for everyone, everywhere.
+            </p>
+        </div>
+    </section>
+
     
+    <section id="expression" class="page">
+
+        <div>
+            
+            <form action="" class="frm">
+                <textarea name="story" id="" placeholder="You tell us where, we bring the art—and together we transform the world." class="tarea"></textarea>
+                <br>
+                <button type="submit" value="Send" class="sending">Share</button>
+            </form>
+        </div>
+    </section>
+
+    
+    <section id="invitation" class="page">
+        
+        
+        <p class="pitch">Join us in this amazing journey...</p>
+
+        <div class="fcontainer">
+            <form action="">
+                <input type="text" name="email" placeholder="Email Address">
+                <br>
+                <input type="text" name="fname" placeholder="First Name">
+                <input type="text" name="lname" placeholder="Last Name">
+                <br>
+                <input type="text" name="address" placeholder="Contact Number">
+                <br>
+                <input type="submit" name="Join" class="j-btn">
+            </form>
+        </div>
+    </section>
+
+<script>
+  const joinBtn = document.getElementById('joinBtn');
+  joinBtn.addEventListener('click', () => {
+    const invitationSection = document.getElementById('invitation');
+    invitationSection.scrollIntoView({ behavior: 'smooth' });
+  });
+</script>
+
 </body>
+
 </html>
